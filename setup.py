@@ -2,13 +2,13 @@ from os import path
 from setuptools import find_packages, setup
 here = path.abspath(path.dirname(__file__))
 
-version_num = "1.0.0"
+version_num = "1.0.1"
 
 with open('README.rst') as f:
     long_description = f.read()
 
 setup(
-    name='PurgoMalum',
+    name='purgo-malum',
     version=version_num,
     description='A python client for the PurgoMalum profanity filter web service',
     long_description=long_description,
