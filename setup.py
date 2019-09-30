@@ -18,7 +18,7 @@ setup(
     url='https://github.com/kdious/purgomalum-python',
     download_url='https://github.com/kdious/purgomalum-python/tarball/{ver}'.format(
         ver=version_num),
-    install_requires=['future==0.17.1', 'requests==2.22.0'],
+    install_requires=['future==0.17.1', 'requests'],
     packages=find_packages(),
     keywords=['profanity', 'filter', 'PurgoMalum', 'purgomalum', 'purgo_malum', 'purgo-malum', 'Purgo Malum'],
     classifiers=[

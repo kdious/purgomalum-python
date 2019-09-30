@@ -55,24 +55,24 @@ def build_url(text, request_type, add=None, fill_text=None, fill_char=None):
         raise ValueError("Input param 'request_type' is invalid - must be one of {}"
                          .format(VALID_REQUEST_TYPES))
 
-    query_string_params = {'text': text}
+    query_string_params = [('text', text)]
 
     if add:
         if not isinstance(add, str):
             raise ValueError("Input param 'add' is a {} (must be a str)".format(type(add)))
-        query_string_params['add'] = add
+        query_string_params.append(('add', add))
 
     if fill_text:
         if not isinstance(fill_text, str):
             raise ValueError("Input param 'fill_text' is a {} (must be a str)"
                              .format(type(fill_text)))
-        query_string_params['fill_text'] = fill_text
+        query_string_params.append(('fill_text', fill_text))
 
     if fill_char:
         if not isinstance(fill_char, str):
             raise ValueError("Input param 'fill_char' is a {} (must be a str)"
                              .format(type(fill_char)))
-        query_string_params['fill_char'] = fill_char
+        query_string_params.append(('fill_char', fill_char))
 
     query_string = urlencode(query_string_params)
 
