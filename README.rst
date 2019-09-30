@@ -9,7 +9,7 @@ Installation
 
 ::
 
-    pip install purgo-malum
+    pip install purgomalum
 
 or
 
