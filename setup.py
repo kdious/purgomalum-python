@@ -2,7 +2,7 @@ from os import path
 from setuptools import find_packages, setup
 here = path.abspath(path.dirname(__file__))
 
-version_num = "1.0.1"
+version_num = "1.0.2"
 
 with open('README.rst') as f:
     long_description = f.read()
@@ -20,7 +20,7 @@ setup(
         ver=version_num),
     install_requires=['future==0.17.1', 'requests==2.22.0'],
     packages=find_packages(),
-    keywords=['profanity', 'filter', 'PurgoMalum', 'prugomalum', 'purgo_malum'],
+    keywords=['profanity', 'filter', 'PurgoMalum', 'purgomalum', 'purgo_malum', 'purgo-malum', 'Purgo Malum'],
     classifiers=[
         "Programming Language :: Python :: 2",
         "Programming Language :: Python :: 3",
