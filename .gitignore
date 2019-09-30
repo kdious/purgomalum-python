@@ -53,8 +53,8 @@ htmlcov/
 .tox/
 .nox/
 .cache
-nosetests.xml
-coverage.xml
+*.xml
 *.cover
+#.coverage
 .hypothesis/
 .pytest_cache/

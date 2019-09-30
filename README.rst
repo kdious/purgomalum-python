@@ -1,3 +1,9 @@
+.. image:: https://travis-ci.com/kdious/purgomalum-python.svg?branch=master
+    :target: https://travis-ci.com/kdious/purgomalum-python
+.. image:: https://kdious.testspace.com/spaces/129598/badge?token=f36dda598ab4731a21f9b352dad13ff12b840e10
+    :alt: Space Metric
+    :target: https://kdious.testspace.com/spaces/129598?utm_campaign=badge&utm_medium=referral&utm_source=test
+
 PurgoMalum Client
 =================
 

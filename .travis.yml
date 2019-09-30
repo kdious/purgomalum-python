@@ -11,13 +11,20 @@ python:
   # PyPy versions
   - "pypy"   # currently Python 2.7.13, PyPy 7.1.1
   - "pypy3"  # currently Python 3.6.1,  PyPy 7.1.1-beta0
+# commands to run before dependencies installation
+before_install:
+  - mkdir -p $HOME/bin
+  - curl -fsSL https://testspace-client.s3.amazonaws.com/testspace-linux.tgz | tar -zxvf- -C $HOME/bin
+  - testspace config url kdious.testspace.com
 # command to install dependencies
 install:
   - pip install -r requirements.txt
   - pip install .
 # command to run tests
 script:
-  - pytest --cov-report term-missing --cov=purgo_malum/
+  - pytest --cov-report term-missing --cov=purgo_malum/ --junitxml=coverage.xml
+after_script:
+  testspace analysis.xml test*.xml coverage.xml --repo=git
 notifications:
   email:
     - kdious@yahoo.com
