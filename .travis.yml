@@ -30,6 +30,7 @@ after_script:
       testspace [$FOLDER]results.xml coverage.xml
     else
       testspace [$FOLDER]results.xml
+    fi
 notifications:
   email:
     - kdious@yahoo.com
