@@ -1,8 +1,15 @@
+.. image:: https://img.shields.io/badge/License-MIT-yellow.svg
+    :target: https://opensource.org/licenses/MIT
+.. image:: https://img.shields.io/badge/stability-stable-green.svg
+    :target: https://github.com/emersion/stability-badges#stable
 .. image:: https://travis-ci.com/kdious/purgomalum-python.svg?branch=master
     :target: https://travis-ci.com/kdious/purgomalum-python
 .. image:: https://kdious.testspace.com/spaces/129598/badge?token=f36dda598ab4731a21f9b352dad13ff12b840e10
     :alt: Space Metric
     :target: https://kdious.testspace.com/spaces/129598?utm_campaign=badge&utm_medium=referral&utm_source=test
+.. image:: https://kdious.testspace.com/spaces/129598/metrics/94790/badge?token=9ebc4cf22733a561c29f7cfefe760fbcdb4f9fef
+    :alt: Space Metric
+    :target: https://kdious.testspace.com/spaces/129598/current/Code%20Coverage?utm_campaign=badge&utm_medium=referral&utm_source=coverage
 
 PurgoMalum Client
 =================
