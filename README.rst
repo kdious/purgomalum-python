@@ -1,3 +1,7 @@
+.. image:: https://img.shields.io/badge/License-MIT-yellow.svg
+    :target: https://opensource.org/licenses/MIT
+.. image:: https://img.shields.io/badge/stability-stable-green.svg
+    :target: https://github.com/emersion/stability-badges#stable
 .. image:: https://travis-ci.com/kdious/purgomalum-python.svg?branch=master
     :target: https://travis-ci.com/kdious/purgomalum-python
 .. image:: https://kdious.testspace.com/spaces/129598/badge?token=f36dda598ab4731a21f9b352dad13ff12b840e10
