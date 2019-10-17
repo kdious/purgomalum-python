@@ -22,9 +22,15 @@ install:
   - pip install .
 # command to run tests
 script:
-  - pytest --cov-report term-missing --cov=purgo_malum/ --junitxml=coverage.xml
+  - pytest --cov-report xml:coverage.xml --cov=purgo_malum/ --junitxml=results.xml
 after_script:
-  testspace analysis.xml test*.xml coverage.xml --repo=git
+ - export FOLDER=Python:$TRAVIS_PYTHON_VERSION
+ - |
+   if [ "$TRAVIS_PYTHON_VERSION" = "3.6" ]; then
+     testspace [$FOLDER]results.xml coverage.xml
+   else
+     testspace [$FOLDER]results.xml
+   fi
 notifications:
   email:
     - kdious@yahoo.com
