@@ -138,9 +138,7 @@ def retrieve_filtered_text_raw(text, request_type, add=None, fill_text=None, fil
 
     if request_type == 'json':
         response_content = response.json()
-    elif request_type == 'plain':
-        response_content = response.content.decode()
-    elif request_type == 'xml':
+    elif request_type in ('plain', 'xml'):
         response_content = response.content.decode()
     else:
         raise ValueError("Input param 'request_type' is invalid - must be one of {}"
