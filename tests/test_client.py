@@ -9,7 +9,7 @@ import pytest
 
 from purgo_malum.client import (
     build_url,
-    ClientError,
+    ResultError,
     contains_profanity,
     retrieve_filtered_text,
     retrieve_filtered_text_raw,
@@ -30,7 +30,7 @@ def test_contains_profanity_invalid_result(mocker):
     response = Mock()
     response.content = b'invalid'
     mocker.patch('requests.get', return_value=response)
-    with pytest.raises(ClientError):
+    with pytest.raises(ResultError):
         contains_profanity('Invalid text test')
 
 
@@ -55,7 +55,7 @@ def test_retrieve_filtered_text_fill_char():
 def test_retrieve_filtered_text_json_error(mocker):
     url = 'https://www.purgomalum.com/service/json?text='
     mocker.patch('purgo_malum.client.build_url', return_value=url)
-    with pytest.raises(ClientError):
+    with pytest.raises(ResultError):
         retrieve_filtered_text('')
 
 

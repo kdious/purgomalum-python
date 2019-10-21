@@ -1,0 +1,4 @@
+# this is a comprehensive listing of all requirements useful for development
+-r requirements.txt
+-r requirements-docs.txt
+-r requirements-test.txt
