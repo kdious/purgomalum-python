@@ -1,0 +1,2 @@
+# these requirements are for the pdoc3 documentation builder
+pdoc3==0.7.1
