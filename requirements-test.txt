@@ -1,0 +1,6 @@
+# these are the requirements to run the full test suite.
+-r requirements.txt
+mock==3.0.5
+pytest==5.2.1
+pytest-cov==2.7.1
+pytest-mock==1.11.0
